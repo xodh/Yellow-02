@@ -1,41 +1,107 @@
 <!DOCTYPE html>
 <html lang="kr">
-	<style type = "text/css">
-	body {
-	background:url('http://cfile23.uf.tistory.com/image/2642523E561DDEB43CA38D') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-	</style>
-    <head>
-        <title>Card News</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <head>
-            <style>
-                h1{font-size:5rem;font-family: fantasy, cursive;font-weight: bold;line-height: 1;}
-            </style>
-        </head>
-        <div style = "text-align:center">
-        <h1>Card News!</h1>
-	<b><p> ms.song married</p></b>   
-        <a href="http://news.chosun.com/site/data/html_dir/2017/10/31/2017103102266.html"><img src="http://cphoto.asiae.co.kr/listimglink/6/2017103122021833738_1.jpg" alt="Smiley face" height="200" width="160">
-	</a>
-	<b><p> 창원 폭발사고</p></b>
-        <a href="http://www.yonhapnews.co.kr/bulletin/2017/11/02/0200000000AKR20171102107053052.HTML?input=1195m"><img src="http://img.yonhapnews.co.kr/photo/yna/YH/2017/11/02/PYH2017110228410005200_P4.jpg" alt="Smiley face" height="200" width="160">
-	</a>
+    <style type = "text/css">
+    body {
+    background:url('http://cfile23.uf.tistory.com/image/2642523E561DDEB43CA38D (74 kB)
+
+') no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+    </style>
+    <style>
+        .fixed {
+         position: fixed;
+            top: 10px;
+            left: 10px;
+            width: 90px;
+            padding: 20px;
+        }
+    </style>
+   <head>
+       <title>Card News</title>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link href="css/style.css" rel="stylesheet">
+   </head>
+   <body>
+       <head>
+           <style>
+               h1{font-size:5rem;font-family: fantasy, cursive;font-weight: bold;line-height: 1;}
+           </style>
+       </head>
+       <div style = "text-align:center">
+       <h1>Card News!</h1>
+    <div style="border: 10px solid black; float: left; width: 30%;">   
+    <b><p> 송중기-송혜교 결혼</p></b>  
+       <a href="http://news.chosun.com/site/data/html_dir/2017/10/31/2017103102266.html"><img src="http://cphoto.asiae.co.kr/listimglink/6/2017103122021833738_1.jpg" alt="결혼 사진" height="200" width="160"></a>
+    </div>
+    <div style="border: 10px solid black; float: left; width: 30%;">
+    <b><p> 창원 폭발사고</p></b>
+       <a href="http://www.yonhapnews.co.kr/bulletin/2017/11/02/0200000000AKR20171102107053052.HTML?input=1195m"><img src="http://img.yonhapnews.co.kr/photo/yna/YH/2017/11/02/PYH2017110228410005200_P4.jpg" alt="폭팔 사진" height="200" width="160">
+    </div>
+    <div style="border: 10px solid black; float: left; width: 30%;">
+    <b><p> 창원 폭발사고</p></b>	
+    	<a href="http://www.siminilbo.co.kr/news/articleView.html?idxno=538009"><img src="http://img.yonhapnews.co.kr/photo/yna/YH/2017/11/02/PYH2017110228410005200_P4.jpg" alt="폭팔 사진" height="200" width="160">
+    </div>
+    <div style="border: 10px solid black; float: left; width: 30%;">
+	<b><p> 창원 폭발사고</p></b>	
+    	<a href="http://www.siminilbo.co.kr/news/articleView.html?idxno=538009"><img src="http://img.yonhapnews.co.kr/photo/yna/YH/2017/11/02/PYH2017110228410005200_P4.jpg" alt="폭팔 사진" height="200" width="160">
 	</div>
-	<body>
-	<form>
-	<label>select a file :</label>
-	<input type = "file">
-	<input type = "submit" value = "업로드">
-	</form>
-	</body>
-    
+	<div style="border: 10px solid black; float: left; width: 30%;">
+	<b><p> 창원 폭발사고</p></b>	
+    	<a href="http://www.siminilbo.co.kr/news/articleView.html?idxno=538009"><img src="http://img.yonhapnews.co.kr/photo/yna/YH/2017/11/02/PYH2017110228410005200_P4.jpg" alt="폭팔 사진" height="200" width="160">
+	</div>
+	<div style="border: 10px solid black; float: left; width: 30%;">
+	<b><p> 창원 폭발사고</p></b>	
+    	<a href="http://www.siminilbo.co.kr/news/articleView.html?idxno=538009"><img src="http://img.yonhapnews.co.kr/photo/yna/YH/2017/11/02/PYH2017110228410005200_P4.jpg" alt="폭팔 사진" height="200" width="160">
+	</div>
+	</div>
+    <div class="fixed">
+    <form enctype='multipart/form-data' action='upload_ok.php' method='post'>
+    <input type='file' name='myfile'>
+    <button>보내기</button>
+    </form>
+    <body>
+    <?php
+
+    // 설정
+    $uploads_dir = './uploads';
+    $allowed_ext = array('jpg','jpeg','png','gif');
+
+    // 변수 정리
+    $error = $_FILES['myfile']['error'];
+    $name = $_FILES['myfile']['name'];
+    $ext = array_pop(explode('.', $name));
+
+    // 오류 확인
+    if( $error != UPLOAD_ERR_OK ) {
+        switch( $error ) {
+            case UPLOAD_ERR_INI_SIZE:
+            case UPLOAD_ERR_FORM_SIZE:
+                echo "파일이 너무 큽니다. ($error)";
+                break;
+            case UPLOAD_ERR_NO_FILE:
+                echo "파일이 첨부되지 않았습니다. ($error)";
+                break;
+            default:
+                echo "파일이 제대로 업로드되지 않았습니다. ($error)";
+        }
+        exit;
+    }
+
+    // 확장자 확인
+    if( !in_array($ext, $allowed_ext) ) {
+        echo "허용되지 않는 확장자입니다.";
+        exit;
+    }
+
+    // 파일 이동
+    move_uploaded_file( $_FILES['myfile']['tmp_name'], "$uploads_dir/$name");
+    ?>
     </body>
+    </div>
+   
+   </body>
 </html>
